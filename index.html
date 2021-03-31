@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Art Responsive Website Design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="logo">Creative</div>
+            <img src="./img/bg.jpg" class="bg" alt="">
+            <div class="content">
+                <h2>Let's Make <br>Something Creative</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque beatae, eius molestias blanditiis maxime? Perspiciatis, fuga odit beatae, quidem aliquid eos consequatur ratione, eveniet aperiam voluptatum assumenda suscipit natus.
+
+                </p>
+                <a href="#">Get Started</a>
+            </div>
+            <p class="copyrightText">2020. Duy Hate Coding</p>
+        </section>
+        <div class="menuToggle" onclick="toggleMenu();">
+
+        </div>
+        <div class="navigation">
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="socialBar">
+                <ul>
+                    <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+                </ul>
+                <a href="#" class="emailBox"><img src="./img/email.png" alt=""></a>
+            </div>
+        </div>
+    <script>
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.menuToggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    </body>
+</html>
